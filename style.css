@@ -24,6 +24,12 @@
     scroll-behavior: smooth;
 }
 
+/* Garante que imagens, SVG e vídeos nunca ultrapassem a largura do ecrã/tela */
+img, svg, video {
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-light);
@@ -778,7 +784,7 @@ footer {
     }
 }
 
-/* --- RESPONSIVIDADE --- */
+/* --- RESPONSIVIDADE PARA TABLETS E TELAS MÉDIAS (ATÉ 900px) --- */
 @media (max-width: 900px) {
     .about-grid {
         grid-template-columns: 1fr;
@@ -798,7 +804,9 @@ footer {
     }
 }
 
+/* --- RESPONSIVIDADE PARA CELULARES (ATÉ 768px) --- */
 @media (max-width: 768px) {
+    /* Ajuste do Header e Botões */
     .mobile-toggle {
         display: block;
     }
@@ -808,13 +816,64 @@ footer {
         padding: 0.45rem 0.85rem;
         font-size: 0.78rem;
     }
-    .hero h1 {
-        font-size: 2.3rem;
-    }
+
+    /* Ajuste da Hero Section para Celular */
     .hero {
-        padding-top: 7rem;
+        padding: 7rem 1rem 4rem;
+        text-align: center;
     }
+    .hero h1 {
+        font-size: 2rem; /* Reduz de 3.2rem para caber no telemóvel/celular */
+        line-height: 1.25;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .hero-actions {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .btn-primary-whatsapp, .btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Ajuste dos Cartões de Destaque */
+    .quick-features {
+        margin-top: -1.5rem;
+        padding: 0 1rem;
+    }
+
+    /* Ajuste da Seção Quem Sou */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .about-image-wrapper img {
+        height: auto; /* Remove a altura fixa de 500px */
+        max-height: 380px;
+    }
+    .experience-card {
+        right: 10px;
+        bottom: -15px;
+        padding: 0.8rem 1rem;
+    }
+
+    /* Ajuste dos Formulários e Simulador */
     .simulador-container {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1rem;
+    }
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    .form-group.full-width {
+        grid-column: span 1;
+    }
+
+    /* Ajuste do Rodapé */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
