@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Ser & Mente | Psicologia Clínica e Bem-Estar</title>
+    
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Ícones FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO / HEADER FIXO -->
+    <header>
+        <nav>
+            <a href="#" class="brand-logo">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">Clínica Ser & Mente</span>
+                    <span class="brand-sub">Dr. Alex Silva | Psicologia</span>
+                </div>
+            </a>
+
+            <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="btn-header">
+                Agendar Consulta
+            </a>
+
+            <button class="mobile-toggle" id="mobileToggleBtn" aria-label="Menu Mobile">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="mobile-dropdown" id="mobileDropdown">
+                <li><a href="#quem-sou" class="nav-link">Quem Sou</a></li>
+                <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
+                <li><a href="#como-funciona" class="nav-link">Como Funciona</a></li>
+                <li><a href="#agendar" class="nav-link">Simulador de Agendamento</a></li>
+                <li><a href="#faq" class="nav-link">Perguntas Frequentes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge-hero">
+                    <i class="fa-solid fa-shield-halved"></i> Atendimento Acolhedor, Sigiloso e Ético
+                </div>
+                <h1>Cuidar da sua saúde mental é o primeiro passo para uma vida plena</h1>
+                <p>Psicoterapia especializada fundamentada em práticas científicas. Um espaço seguro de escuta para superação da ansiedade, estresse e fortalecimento da autoconfiança.</p>
+                
+                <div class="hero-actions">
+                    <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20informações%20sobre%20as%20consultas%20psicológicas." target="_blank" class="btn-primary-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar pelo WhatsApp
+                    </a>
+                    <a href="#quem-sou" class="btn-secondary">
+                        Conhecer o Psicólogo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RÁPIDO DESTAQUE INFORMATIVO -->
+    <div class="quick-features">
+        <div class="features-grid">
+            <div class="feature-box">
+                <i class="fa-solid fa-laptop-house"></i>
+                <div>
+                    <h4>Atendimento On-line</h4>
+                    <p>Sessões por videochamada para todo o Brasil e exterior.</p>
+                </div>
+            </div>
+            <div class="feature-box">
+                <i class="fa-solid fa-building-user"></i>
+                <div>
+                    <h4>Consultório Presencial</h4>
+                    <p>Ambiente preparado, reservado e de fácil acesso.</p>
+                </div>
+            </div>
+            <div class="feature-box">
+                <i class="fa-solid fa-user-check"></i>
+                <div>
+                    <h4>Prática Científica</h4>
+                    <p>Foco na Terapia Cognitivo-Comportamental (TCC).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEÇÃO QUEM SOU -->
+    <section class="about-section" id="quem-sou">
+        <div class="about-grid">
+            <div class="about-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=800&q=80" alt="Foto Profissional do Psicólogo Dr. Alex Silva">
+                <div class="experience-card">
+                    <div class="number">10+</div>
+                    <div style="font-size: 0.85rem;">Anos de Prática Clínica</div>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <span class="crp-tag"><i class="fa-solid fa-id-card"></i> CRP 05/123456 • Cadastro E-Psi Ativo</span>
+                <h2>Olá, sou o Dr. Alex Silva</h2>
+                <p>Sou psicólogo clínico pós-graduado em Terapia Cognitivo-Comportamental (TCC) e mestre em Psicologia Clínica. Dedico minha carreira a oferecer um suporte terapêutico ético, empático e estruturado.</p>
+                <p>Acredito que cada pessoa possui potencial para transformar padrões comportamentais e lidar com os desafios diários de maneira mais leve e equilibrada. Meu compromisso é fornecer as ferramentas necessárias para essa jornada de autoconhecimento.</p>
+                
+                <ul class="highlights-list">
+                    <li><i class="fa-solid fa-circle-check"></i> Consultas individuais com duração de 50 minutos</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Sigilo absoluto resguardado pelo Código de Ética</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Avaliação inicial personalizada para definição do plano terapêutico</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO ESPECIALIDADES -->
+    <section id="especialidades">
+        <div class="section-header">
+            <h2>Especialidades de Atendimento</h2>
+            <p>Tratamentos focados e adaptados às necessidades emocionais de cada paciente.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                <h3>Transtornos de Ansiedade</h3>
+                <p>Tratamento para crises de pânico, Ansiedade Generalizada (TAG), fobias e tensão constante no dia a dia.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-sun"></i></div>
+                <h3>Depressão e Desânimo</h3>
+                <p>Acompanhamento focado na recuperação do interesse, manejo dos sentimentos de tristeza e resgate da vitalidade.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+                <h3>Desenvolvimento Pessoal</h3>
+                <p>Trabalho voltado para fortalecimento da autoestimada, assertividade, inteligência emocional e tomada de decisões.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <h3>Síndrome de Burnout</h3>
+                <p>Prevenção e reabilitação do esgotamento profissional, sobrecarga de trabalho e estresse corporativo.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-comments"></i></div>
+                <h3>Conflitos Relacionais</h3>
+                <p>Orientação para melhoria da comunicação, estabelecimento de limites saudáveis e resolução de conflitos interpessoais.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+                <h3>Luto e Transições</h3>
+                <p>Suporte emocional em fases de perdas, fins de ciclo, mudanças de carreira e adaptações de vida.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO COMO FUNCIONA -->
+    <section class="process-section" id="como-funciona">
+        <div class="section-header">
+            <h2>Como Funciona o Processo</h2>
+            <p>Iniciar sua jornada terapêutica é simples e direto. Confira as etapas:</p>
+        </div>
+
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h3>Primeiro Contato</h3>
+                <p>Você envia uma mensagem informando seus horários disponíveis e modalidade desejada.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <h3>Triagem Inicial</h3>
+                <p>Alinhamos dúvidas sobre valores, formas de pagamento e alinhamos a primeira sessão.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <h3>Sessão de Acolhimento</h3>
+                <p>Realizamos a primeira consulta para entender sua demanda e traçar os objetivos.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <h3>Acompanhamento</h3>
+                <p>Sessões periódicas com foco no seu desenvolvimento e alcance de resultados concretos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIMULADOR INTERATIVO -->
+    <section id="agendar">
+        <div class="section-header">
+            <h2>Simule seu Agendamento</h2>
+            <p>Preencha os campos abaixo para gerar o pedido diretamente no WhatsApp do consultório.</p>
+        </div>
+
+        <div class="simulador-container">
+            <form id="simuladorForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nome">Seu Nome Completo:</label>
+                        <input type="text" id="nome" placeholder="Ex: Maria Oliveira" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="modalidade">Modalidade de Atendimento:</label>
+                        <select id="modalidade" required>
+                            <option value="">Selecione...</option>
+                            <option value="On-line (Videochamada)">On-line (Videochamada)</option>
+                            <option value="Presencial (Consultório)">Presencial (Consultório)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="periodo">Turno de Preferência:</label>
+                        <select id="periodo">
+                            <option value="Manhã">Manhã</option>
+                            <option value="Tarde">Tarde</option>
+                            <option value="Noite">Noite</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="motivo">Assunto/Demanda Principal (Opcional):</label>
+                        <input type="text" id="motivo" placeholder="Ex: Ansiedade, Luto, Burnout">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit-simulador">
+                    <i class="fa-brands fa-whatsapp"></i> Confirmar e Enviar pelo WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS E AVALIAÇÕES -->
+    <section class="testimonials-section">
+        <div class="section-header">
+            <h2>Depoimentos de Pacientes</h2>
+            <p>Relatos sigilosos e preservados de pessoas que transformaram suas vidas através da terapia.</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"A terapia com o Dr. Alex foi fundamental para eu conseguir lidar com minhas crises de ansiedade no trabalho. O atendimento online é super prático e pontual."</p>
+                <div class="client-info">
+                    <h5>M. R. S.</h5>
+                    <span>Atendimento On-line</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"Excelente profissional. Muito empático e atencioso. Desde as primeiras sessões consegui enxergar meus problemas por outra perspectiva."</p>
+                <div class="client-info">
+                    <h5>G. A. F.</h5>
+                    <span>Atendimento Presencial</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p>"O ambiente do consultório traz muita paz e segurança. Recomendo de olhos fechados para quem busca autoconhecimento."</p>
+                <div class="client-info">
+                    <h5>C. T. M.</h5>
+                    <span>Atendimento Presencial</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERGUNTAS FREQUENTES (FAQ) -->
+    <section class="faq-section" id="faq">
+        <div class="section-header">
+            <h2>Perguntas Frequentes</h2>
+            <p>Esclareça suas principais dúvidas sobre as consultas e o processo terapêutico.</p>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    Como funciona a primeira consulta?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    A primeira sessão é dedicada ao acolhimento e escuta da sua história. Conversamos sobre as razões que o levaram a buscar atendimento, esclarecemos dúvidas sobre a metodologia e definimos os próximos passos.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    A terapia on-line possui a mesma eficácia da presencial?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    Sim! O atendimento on-line é regulamentado pelo Conselho Federal de Psicologia (CFP) e possui comprovada eficiência equivalente à modalidade presencial, oferecendo comodidade e economia de tempo.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Qual a duração e frequência das sessões?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    As sessões duram 50 minutos. Geralmente, a frequência indicada no início é semanal, podendo ser espaçada para quinzenal à medida que o paciente evolui no tratamento.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Como é mantido o sigilo das informações?
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    Todas as informações compartilhadas em consulta são rigorosamente protegidas pelo Código de Ética Profissional do Psicólogo. Para atendimentos virtuais, utilizamos plataformas com criptografia ponta a ponta.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <a href="https://wa.me/5500000000000?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="whatsapp-float" aria-label="Contato via WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Clínica Ser & Mente</h3>
+                <p>Compromisso ético, científico e humano com a sua saúde mental e qualidade de vida. Atendimentos realizados em conformidade com o Conselho Federal de Psicologia.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Atendimento</h4>
+                <ul class="footer-info-list">
+                    <li><i class="fa-solid fa-clock"></i> Seg a Sex: 08h às 20h</li>
+                    <li><i class="fa-solid fa-calendar-check"></i> Sábados: 08h às 12h</li>
+                    <li><i class="fa-solid fa-shield-halved"></i> Cadastro E-Psi Autorizado</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contato & Localização</h4>
+                <ul class="footer-info-list">
+                    <li><i class="fa-solid fa-location-dot"></i> Av. Principal, 1000 - Sala 502</li>
+                    <li><i class="fa-solid fa-envelope"></i> contato@seremente.com.br</li>
+                    <li><i class="fa-solid fa-phone"></i> (21) 99999-9999</li>
+                    <li><i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/seu_perfil" target="_blank">@seremente.psicologia</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Clínica Ser & Mente | Dr. Alex Silva (CRP 05/123456). Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JS Externo -->
+    <script src="script.js"></script>
+</body>
+</html>
