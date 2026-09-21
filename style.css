@@ -805,7 +805,6 @@ footer {
 }
 
 /* --- RESPONSIVIDADE PARA CELULARES (ATÉ 768px) --- */
-/* --- RESPONSIVIDADE PARA CELULARES (ATÉ 768px) --- */
 @media (max-width: 768px) {
     /* Ajuste do Header (Oculta o botão e ajusta o logótipo) */
     .btn-header {
