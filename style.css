@@ -805,16 +805,28 @@ footer {
 }
 
 /* --- RESPONSIVIDADE PARA CELULARES (ATÉ 768px) --- */
+/* --- RESPONSIVIDADE PARA CELULARES (ATÉ 768px) --- */
 @media (max-width: 768px) {
-    /* Ajuste do Header e Botões */
+    /* Ajuste do Header (Oculta o botão e ajusta o logótipo) */
+    .btn-header {
+        display: none;
+    }
+
+    nav {
+        padding: 0.8rem 1rem;
+        justify-content: space-between;
+    }
+
     .mobile-toggle {
         display: block;
     }
-    .btn-header {
-        margin-left: auto;
-        margin-right: 12px;
-        padding: 0.45rem 0.85rem;
-        font-size: 0.78rem;
+
+    .brand-name {
+        font-size: 1.1rem;
+    }
+
+    .brand-sub {
+        font-size: 0.68rem;
     }
 
     /* Ajuste da Hero Section para Celular */
@@ -823,7 +835,7 @@ footer {
         text-align: center;
     }
     .hero h1 {
-        font-size: 2rem; /* Reduz de 3.2rem para caber no telemóvel/celular */
+        font-size: 2rem;
         line-height: 1.25;
     }
     .hero p {
@@ -851,7 +863,7 @@ footer {
         gap: 2rem;
     }
     .about-image-wrapper img {
-        height: auto; /* Remove a altura fixa de 500px */
+        height: auto;
         max-height: 380px;
     }
     .experience-card {
