@@ -1,21 +1,40 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // --- MENU MOBILE ---
+             // --- MENU MOBILE ---
     const mobileToggleBtn = document.getElementById('mobileToggleBtn');
     const mobileDropdown = document.getElementById('mobileDropdown');
     const navLinks = document.querySelectorAll('.nav-link');
 
     if (mobileToggleBtn && mobileDropdown) {
+        // Seleciona a tag do ícone (i ou svg) dentro do botão
+        const icon = mobileToggleBtn.querySelector('i');
+
         mobileToggleBtn.addEventListener('click', () => {
-            mobileDropdown.classList.toggle('active');
+            const isOpen = mobileDropdown.classList.toggle('active');
+
+            // Troca a classe do ícone conforme o estado do menu
+            if (icon) {
+                if (isOpen) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark'); // Símbolo do "X"
+                } else {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');  // Volta ao Hambúrguer
+                }
+            }
         });
 
-        // Fechar menu ao clicar em qualquer link
+        // Fechar menu ao clicar em qualquer link e resetar o ícone para hambúrguer
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileDropdown.classList.remove('active');
+                if (icon) {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
             });
         });
     }
+
 
     // --- PERGUNTAS FREQUENTES (FAQ ACCORDION) ---
     const faqQuestions = document.querySelectorAll('.faq-question');
